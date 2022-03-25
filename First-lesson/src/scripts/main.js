@@ -17,7 +17,7 @@ function введитеВозраст() {
         console.log(currentTime.getMilliseconds()%parsedAge)
     
     }
-if(currentTime.getSeconds()%2!=0 && parsedAge%2===0) {console.log(`${parsedAge}`)}
+if(currentTime.getSeconds()%2!=0 && parsedAge%2===0) {convertNumberToText(`${parsedAge}`);}
 
     // Если возраст больше 35, то вызвать alert с адресом ближайщего для тебя палеонтологического музея и закончить выполнение функции
     // Если текущая секунда четная и возраст нечётный, то вызвать alert с содержанием остаток деления времени в миллисекундах на возраст и закончить выполнение функции
@@ -25,3 +25,20 @@ if(currentTime.getSeconds()%2!=0 && parsedAge%2===0) {console.log(`${parsedAge}`
     // Если ничего из этого не подошло, то написать в консоль (console.log) возраст и время
 }
 введитеВозраст();
+
+/**
+ * Функция, которая конвертирует число меньше ста в строчном виде
+ * @param {number} input Число
+ */
+function convertNumberToText(input) {
+  const fromZeroToNineteen = ["один", "два", "три", "девятнадцать"];
+  const fromTwentyToNinety = ["двадцать", "тридцать", "девяносто"];
+  const result = null;
+  // Если input больше ста, то вернуть null
+
+  // Если input меньше двадцать, то использовать только fromZeroToNineteen
+  // return;
+
+  // Если input больше или равно двадцати, то число нужно представить в виде строки, и первый символ строки перевести в текст из массива fromTwentyToNinety, а второй символ из массива fromZeroToNineteen
+  return result;
+}
