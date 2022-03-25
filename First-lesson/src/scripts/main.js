@@ -42,4 +42,3 @@ function convertNumberToText(input) {
   // Если input больше или равно двадцати, то число нужно представить в виде строки, и первый символ строки перевести в текст из массива fromTwentyToNinety, а второй символ из массива fromZeroToNineteen
   return result;
 }
-//hello
