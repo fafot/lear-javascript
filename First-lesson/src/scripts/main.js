@@ -6,12 +6,12 @@ function введитеВозраст() {
     const currentTime = new Date();
     textAge = parsedAge
     if (Number.isNaN(parsedAge)) {
-        console.log("Age is invalid");
-    } else {
+        console.log("Введено не верное значение");
+    } else 
         console.log(`Ваш возраст ${parsedAge}`);
     }
-    if (parsedAge >= 35) {
-        console.log("Nezalejnosti sqr");
+    else if (parsedAge >= 35) {
+        console.log("улица Музейно-палеонтологическая,25");
     }
     if (currentTime.getSeconds() % 2 === 0 && parsedAge%2!=0) {
         console.log(currentTime.getMilliseconds()%parsedAge)
@@ -19,11 +19,15 @@ function введитеВозраст() {
     }
 if(currentTime.getSeconds()%2!=0 && parsedAge%2===0) {convertNumberToText(`${parsedAge}`);}
 
+else {
+    console.log(parsedAge:""; currentTime)
+}
+
     // Если возраст больше 35, то вызвать alert с адресом ближайщего для тебя палеонтологического музея и закончить выполнение функции
     // Если текущая секунда четная и возраст нечётный, то вызвать alert с содержанием остаток деления времени в миллисекундах на возраст и закончить выполнение функции
     // Если секунда нечётная, а возраст чётный, то вызвать alert с содержанием возраста в строчном виде. Например, 30 - тридцить, 24 - двадцать четыре, 7 - семь
     // Если ничего из этого не подошло, то написать в консоль (console.log) возраст и время
-}
+
 введитеВозраст();
 
 /**
