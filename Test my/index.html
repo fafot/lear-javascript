@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     /*let number = prompt("Введите число", "");
+     if (number>0) {
+       alert( "1" );
+     } else if (number<0){
+       alert("-1");
+    }  else {
+       alert("0");
+    }
+    */
+    /*
+    let number = prompt ("сумма а+b", "");
+    let result=number < 4 ? 'Много': 'Мало';
+    alert(result);
+*/
+/*let login=prompt('введите логин','');
+let message = (login == 'Сотрудник')?
+'Привет':
+(login == 'Директор') ? 'Здравствуйте': 
+(login == '') ? 'Нет логина': ''
+alert(message);*/
+//Напишите условие if для проверки, что переменная age находится в диапазоне между 14 и 90 включительно
+
+//«Включительно» означает, что значение переменной age может быть равно 14 или 90.
+
+/*let login=prompt("Введите логин","");
+if (login=="Админ") { message="OK"}
+ else if (login=="1") { message="Отменено"} 
+else{message="Я вас не знаю"};
+alert (message);*/
+
+
+/*let login=prompt("Кто там?","");
+if (login=="Админ") {
+     let password=prompt("Пароль","")
+      if (password==="Я главный") {alert("Здравствуйте")}
+        else if (password===""||password==null) { alert("Отменено")} 
+        else {alert("Не верный пароль")}
+    }
+     else if (login==""||login==null) { alert("Отменено")} 
+    else {alert("Я вас не знаю")};*/
+
+    /*let i = 0;
+do {
+  alert( i );
+  i++;
+} while (i < 3);*/
+
+/*let i 
+for (i = 2; i <= 10; ++i) {
+
+if (i%2!==0) continue
+
+
+alert( i );
+}*/
+
+ /*let number;
+ do{
+     number=prompt("Введите число больше 100","")
+ }
+   while (number<=100 && number)*/
+   //for (let i = 2; i <== 10; i++) {
+
+// если true, пропустить оставшуюся часть тела цикла
+/*if (i % 1 !== 0 && i % i !== 0) continue;
+
+alert(i); // 1, затем 3, 5, 7, 9
+}*/
+
+   
+   
+/*Натуральное число, большее 1, называется простым, если оно ни на что не делится, кроме себя и 1.
+
+Другими словами, n > 1 – простое, если при его делении на любое число кроме 1 и n есть остаток.
+
+Например, 5 это простое число, оно не может быть разделено без остатка на 2, 3 и 4.
+
+Напишите код, который выводит все простые числа из интервала от 2 до n.
+
+Для n = 10 результат должен быть 2,3,5,7.
+
+P.S. Код также должен легко модифицироваться для любых других интервалов.*/
+
+   
+  //for (начало;условие;шаг){тело}; Начало-->проверка, если Тру --> выполнится тело и шаг, возврат в начало цикла, --> проверка, если Тру --> выполнится тело и шаг
+/*for (let i=4;i>5;i++){
+    alert(i);
+}*/
+
+/*let browser = prompt ("What's your browser?","")
+ if (browser==="Edge") {alert("You've got the Edge!")}
+ else if (browser==="Chrome"||browser==="Opera" ||browser==="Safari" ||browser==="Firefox") {alert('Okay we support these browsers too')}
+  else {alert('We hope that this page looks ok!')}*/
+
+/*let number = prompt ("Введите число между 0 и 3","");
+switch (number) {
+    case "0": alert ("Вы ввели число 0");
+    break;
+    case "1": alert ("Вы ввели число 1");
+    break;
+    case "2":
+    case "3": alert ("Вы ввели число 2 или 3");
+    break;
+    case (""||null):
+    break;
+}*/
+/*let age;
+function checkAge(age) {
+  if (age > 18) {
+    return true;
+  } else {
+    // ...
+    return confirm('Родители разрешили?');
+  }
+}
+
+
+function checkAge(age)  {return(age > 18) ? true : confirm('Родители разрешили?')}
+function checkAge(age)  {return (age > 18) || confirm('Родители разрешили?')}*/
+
+
+/*function Min (a,b) { if (a<b) 
+    {return a}
+    else {return b};
+}
+let a = +prompt ("Введите а","");
+let b = +prompt ("Введите b","");
+
+alert (Min(a,b));*/
+
+
+function checkAge(age){
+     if (age>18) {
+         return true
+     }
+        else {return confirm ("А родителы разрешили?")};
+}
+let age= prompt("Сколько вам лет?",60);
+if (checkAge(age)) {
+    alert("Доступ разрещен")
+}
+else {
+    alert("Доступ закрыт")
+}
+
+
+
+     </script>
+</body>
+</html>
+```
